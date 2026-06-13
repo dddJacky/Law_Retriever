@@ -1,7 +1,7 @@
 # Law_Retriever
 A law regularizations provider with ability of legal data and corresponding cases retrieval.
 
-Codes available below:
+### Codes available below:
 /src-main system codes 
 start.py-starter of law regularizations retriever 
 retriever.py-batches of law cases processing entrance 
@@ -16,13 +16,13 @@ peft-model setup
 model-chatglm pytorch model and files 
 /data-dataset of law regularizations
 
-Commanders available:
+### Commanders available:
 python ./start.py
 Single mode commander:
 python ./retriever.py
 or
 python ./retriever_judge.py
 
-Finetuned GLM models available:
+### Finetuned GLM models available:
 Lora refined ChatGLM-6B model parameters, downloading through https://pan.baidu.com/s/1_dGRaqZQAUmN7pUHuYFXDQ 
 Please contact 825334222@qq.com
