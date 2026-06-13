@@ -1,0 +1,1013 @@
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.73s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.77s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.78s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.87s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.16s/it]
+Traceback (most recent call last):
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 333, in <module>
+    main()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 136, in main
+    model = model_class.from_pretrained(args.model_path, device_map=device_map)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2478, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2794, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 663, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 5 has a total capacty of 15.77 GiB of which 61.38 MiB is free. Process 1795524 has 14.28 GiB memory in use. Including non-PyTorch memory, this process has 1.43 GiB memory in use. Of the allocated memory 1.13 GiB is allocated by PyTorch, and 1.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.13s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.10s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.13s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:05,  1.27s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.29s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.29s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.12s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.04s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.14s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:11,  1.64s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.68s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.70s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:07,  1.77s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.06s/it]
+Traceback (most recent call last):
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 333, in <module>
+    main()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 136, in main
+    model = model_class.from_pretrained(args.model_path, device_map=device_map)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2478, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2794, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 663, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 5 has a total capacty of 15.77 GiB of which 61.38 MiB is free. Process 1795524 has 14.28 GiB memory in use. Including non-PyTorch memory, this process has 1.43 GiB memory in use. Of the allocated memory 1.13 GiB is allocated by PyTorch, and 1.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.08s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.13s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:06,  1.31s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.34s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.33s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.31s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.13s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.05s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.17s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.88s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.91s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.95s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:08,  2.01s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.95s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:11<00:06,  2.28s/it]
+Traceback (most recent call last):
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 333, in <module>
+    main()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 136, in main
+    model = model_class.from_pretrained(args.model_path, device_map=device_map)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2478, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2794, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 663, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 7 has a total capacty of 15.77 GiB of which 63.38 MiB is free. Process 398080 has 15.28 GiB memory in use. Including non-PyTorch memory, this process has 436.00 MiB memory in use. Of the allocated memory 128.09 MiB is allocated by PyTorch, and 1.91 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.15s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.12s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.12s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.10s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.07s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.05s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.00s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py:1186: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34080)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51840)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51850)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51860)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51868)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51872)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51880)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 我被人偷走了手机; law_query: 刑法
+Received case_description: 我被人偷走了手机; law_query: 刑法
+Received case_description: 我被人偷走了手机; law_query: 刑法
+Received case_description: 我被人偷走了手机; law_query: 刑法
+Received case_description: 我被人偷走了手机; law_query: 刑法
+Received case_description: 我被人偷走了手机; law_query: 刑法
+Received case_description: 我被人偷走了手机; law_query: 刑法
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.77s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.88s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:11,  2.22s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.11s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:10<00:05,  1.99s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:11<00:06,  2.33s/it]
+Traceback (most recent call last):
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 333, in <module>
+    main()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 136, in main
+    model = model_class.from_pretrained(args.model_path, device_map=device_map)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2478, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2794, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/modeling_utils.py", line 663, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 7 has a total capacty of 15.77 GiB of which 63.38 MiB is free. Process 398080 has 15.28 GiB memory in use. Including non-PyTorch memory, this process has 436.00 MiB memory in use. Of the allocated memory 128.09 MiB is allocated by PyTorch, and 1.91 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.14s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.12s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.17s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.13s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.09s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.07s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:07<00:00,  1.01it/s]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py:1186: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45846)
+Traceback (most recent call last):
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 316, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 347, in process_request
+    self.finish_request(request, client_address)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 425, in handle
+    self.handle_one_request()
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/http/server.py", line 413, in handle_one_request
+    method()
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 305, in do_POST
+    answer, law_text, analysis, opinion, law_items = handle_query(case_description or law_query, law_query)
+  File "/data1/qinghao/Law-Retriever/src/retriever.py", line 209, in handle_query
+    response, history = model.chat(tokenizer, effective_case + '请给出法律依据', history=history)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1183, in chat
+    outputs = self.generate(**input_ids, **gen_kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 1437, in generate
+    return self.sample(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/transformers/generation/utils.py", line 2443, in sample
+    outputs = self(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 1084, in forward
+    transformer_outputs = self.transformer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 927, in forward
+    layer_ret = layer(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/Law-Retriever/src/model/modeling_chatglm.py", line 575, in forward
+    attention_input = self.input_layernorm(hidden_states)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 196, in forward
+    return F.layer_norm(
+  File "/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/torch/nn/functional.py", line 2543, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: mixed dtype (CPU): all inputs must share same datatype.
+----------------------------------------
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 我被人打了; law_query: 故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:11,  1.64s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:09,  1.63s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.71s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:06<00:06,  1.72s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.68s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.71s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.47s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.34s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.53s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.90s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.87s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:10,  2.00s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:08,  2.01s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.94s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.05s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.76s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.80s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:2818327) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小A在学校遭到同学霸凌，致使小A身受一级轻伤，警方目前尚未锁定嫌疑人。; law_query: 校园霸凌
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.93s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.88s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:10,  2.02s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.08s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:10<00:06,  2.04s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.06s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.74s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.57s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.81s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:2835487) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.89s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.89s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:10,  2.01s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.06s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  2.00s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.11s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.80s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.65s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.85s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:2837727) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.81s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.79s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.92s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.93s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.85s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.93s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.66s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.51s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.71s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:2842134) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.95s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.03s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:11,  2.21s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.23s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:10<00:06,  2.15s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:13<00:04,  2.23s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:14<00:01,  1.92s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:15<00:00,  1.76s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:15<00:00,  1.98s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:2852032) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:14,  2.06s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.05s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:10,  2.03s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.03s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:10<00:05,  1.99s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.05s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.77s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.62s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.84s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:2855332) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.81s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.84s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.96s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.98s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.85s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.94s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.65s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.71s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:984363) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小A在公司工作三个月即将离职时遭恶意拖欠工资，小A向法院提起诉讼进行维权。​; law_query: 劳动仲裁
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.86s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.88s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.93s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.96s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.87s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.91s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.62s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.71s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1053352) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小A在夜间遭醉酒的小B殴打至重伤，当晚小B被扭送当地派出所拘留。; law_query: 故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.76s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.78s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.87s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.93s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.88s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.94s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.66s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.51s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.71s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1066314) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小A在夜间遭醉酒的小B殴打至重伤并在当晚被送医。; law_query: 故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.82s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.83s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.93s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.95s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.86s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.94s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.67s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.51s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.72s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1079264) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.84s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.91s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.97s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.97s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.89s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.96s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.68s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.52s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.74s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1099064) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.75s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.74s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.80s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.80s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.74s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.81s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.55s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.40s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.60s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1126146) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:11,  1.71s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.72s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.79s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.80s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.73s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.80s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.55s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.41s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.60s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1143719) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.75s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.74s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.80s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.80s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.74s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.81s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.55s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.41s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.61s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1184389) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.90s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.05s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:10,  2.17s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.14s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:10<00:06,  2.04s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.10s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.81s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:15<00:00,  1.64s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:15<00:00,  1.88s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1193971) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.77s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.80s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.93s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.95s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.90s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.98s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.68s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.51s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.73s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1195993) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.76s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.79s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.87s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.90s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.81s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.87s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.61s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.47s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.67s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1209214) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.94s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.89s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.99s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.98s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.94s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:04,  2.01s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.73s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.79s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1223892) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.78s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.81s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.89s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.94s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.90s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.99s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.70s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.54s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.74s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1225709) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.80s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.80s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.88s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.89s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.82s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.89s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.62s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.47s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.68s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1236378) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.77s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.80s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.89s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.94s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.84s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.87s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.60s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.45s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.67s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1238203) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:11,  1.68s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.71s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.83s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.86s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.78s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.85s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.59s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.45s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.64s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1246097) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:11,  1.70s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.72s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:08,  1.78s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.80s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.74s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.80s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.55s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.41s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.60s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1253356) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.89s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  1.91s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  2.00s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:08,  2.03s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.98s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.06s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:13<00:01,  1.77s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.60s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:14<00:00,  1.82s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1264934) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:12,  1.73s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:10,  1.76s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.84s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.83s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:08<00:05,  1.77s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.83s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.57s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.43s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.63s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1271374) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+
+服务器已停止。
+/data1/qinghao/.conda/envs/law/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Explicitly passing a `revision` is encouraged when loading a model with custom code to ensure no malicious code has been contributed in a newer revision.
+load retriver model
+True
+9671
+Using CUDA_VISIBLE_DEVICES=0,1,2,3
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:14,  2.01s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.04s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:10,  2.15s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:08<00:08,  2.17s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:10<00:06,  2.11s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:12<00:04,  2.18s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:14<00:01,  1.86s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:15<00:00,  1.66s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:15<00:00,  1.91s/it]
+/data1/qinghao/Law-Retriever/src/peft/src/peft/tuners/lora.py:175: UserWarning: fan_in_fan_out is set to True but the target module is not a Conv1D. Setting fan_in_fan_out to False.
+  warnings.warn(
+(node:1432855) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Web 服务已启动，请访问：http://127.0.0.1:7860
+Received case_description: 小B在凌晨入室盗窃小A家，被发现后打伤小A逃窜至今。; law_query: 入室盗窃；故意伤害
+
+服务器已停止。
