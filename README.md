@@ -13,8 +13,8 @@ A law regularizations provider with ability of legal data and corresponding case
 * peft_r_model-pickle modules of retrieval 
 * peft_model-pickle model files 
 * peft-model setup 
-* model-chatglm pytorch model and files 
-* /data-dataset of law regularizations
+* model-chatglm pytorch models and files 
+* /data-dataset of law regularizations and cases
 
 ### Commanders available:
 * python ./start.py
